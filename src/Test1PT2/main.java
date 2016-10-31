@@ -1,0 +1,27 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Test1PT2;
+
+import Test1.Studente;
+
+/**
+ *
+ * @author Stendi
+ */
+public class main {
+
+    public static void main(String args[]) {
+        System.out.println("Package esterno:");
+        Studente obj = new Studente();
+        int VotoRicevuto = obj.InserimentoVoto();
+        obj.VisualizzaDati();
+        /*
+        try {
+            obj.Inserimentopasswd();
+            obj.VisualizzaPasswd();
+        }*/
+    }
+}
