@@ -1,14 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package B3Verifica;
 
-/**
- *
- * @author giovanni.sganga
- */
 public class sport {
-    
+
+    public String SedeAmministrativa;
+    public String SedeSportiva;
+    public String Nome;
+    private int Bilancio;
+
+    public int getBilancio() {
+        return Bilancio;
+    }
+
+    public void setBilancio(int Bilancio) {
+        this.Bilancio = Bilancio;
+    }
+
+    public sport() {
+
+    }
+
 }

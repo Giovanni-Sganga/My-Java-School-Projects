@@ -10,5 +10,5 @@ package B3Verifica;
  * @author giovanni.sganga
  */
 public class main {
-    
+
 }

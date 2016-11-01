@@ -1,14 +1,39 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package B3Verifica;
 
-/**
- *
- * @author giovanni.sganga
- */
-public class squadra2 {
-    
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class squadra2 extends sport {
+
+    BufferedReader obj = new BufferedReader(new InputStreamReader(System.in));
+
+    public squadra2() {
+    }
+
+    public void Insert() throws IOException {
+        System.out.println("Inserisci Sede Amministrativa: ");
+        SedeAmministrativa = obj.readLine();
+        System.out.println("Inserire Sede Sportiva");
+        SedeSportiva = obj.readLine();
+        System.out.println("Inserire Nome: ");
+        Nome = obj.readLine();
+    }
+
+    public void print() {
+        System.out.println("Sede Amministrativa: " + SedeAmministrativa);
+        System.out.println("Sede Sportiva: " + SedeSportiva);
+        System.out.println("Nome: " + Nome);
+    }
+
+    public void InserisciBilancio() throws IOException {
+        int Bilanciamento;
+        System.out.println("Settare bilancio: ");
+        Bilanciamento = Integer.parseInt(obj.readLine());
+        setBilancio(Bilanciamento);
+    }
+
+    public void StampaBilancio() {
+        System.out.println("Bilancio: " + getBilancio());
+    }
 }
